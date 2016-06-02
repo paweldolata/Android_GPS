@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InzynierkaTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="ZoomIn">Przybliz</string>
+    <string name="ZoomOut">Oddal</string>
+    <string name="lbl_you_are_at">Your location</string>
+    <string name="Stop">Stop</string>
+    <string name="Start">Start</string>
+    <string name="DrawCoverage">Draw coverage</string>
+    <string name="Wyrysuj">Rysuj granice</string>
+</resources>

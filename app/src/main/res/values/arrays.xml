@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="random_imgs">
+        <item>@drawable/map_dot_black</item>
+        <item>@drawable/map_dot_blue</item>
+        <item>@drawable/map_dot_green</item>
+        <item>@drawable/map_dot_red</item>
+        <item>@drawable/map_dot_orange</item>
+        <item>@drawable/map_dot_yellow</item>
+
+    </string-array>
+
+</resources>

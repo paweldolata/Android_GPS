@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MapsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!-- <TextView
+         android:id="@+id/lblLocation"
+         android:layout_width="match_parent"
+         android:layout_height="15dp"
+         android:gravity="center_horizontal"
+         android:backgroundTint="@color/primary_material_light"
+         android:textColor="#ffe600"
+         android:padding="15dp"
+         android:textSize="16dp" />
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/MyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phoneState"
+            style="@style/MyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signalStrength"
+            style="@style/MyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_weight="1.09" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ZoomIn"
+            android:id="@+id/zoomIn"
+            style="@style/button_text"
+            android:layout_gravity="center_horizontal"
+            android:onClick="zoomInClick"
+            android:layout_weight="0.25" />
+
+        <Button
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ZoomOut"
+            android:id="@+id/zoomOut"
+            style="@style/button_text"
+            android:layout_gravity="center_horizontal"
+            android:onClick="zoomOutClick"
+            android:layout_weight="0.25" />
+
+        <Button
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Stop"
+            android:id="@+id/stop"
+            style="@style/button_text"
+            android:layout_gravity="center_horizontal"
+            android:onClick="stop"
+            android:layout_weight="0.25" />
+
+        <Button
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Start"
+            android:id="@+id/start"
+            style="@style/button_text"
+            android:layout_gravity="center_horizontal"
+            android:onClick="start"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Wyrysuj"
+            android:id="@+id/drawCoverage"
+            style="@style/button_text"
+            android:layout_gravity="center_horizontal"
+            android:onClick="drawCoverage"
+             />
+
+    </LinearLayout>
+</LinearLayout>
